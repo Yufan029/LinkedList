@@ -73,6 +73,22 @@ export default class LinkedList {
         return result.value;
     }
 
+    pop() {
+        if (this.head == null) {
+            return null;
+        }
+        
+        let size = this.size();
+        let secondLast = this.head;
+        for (let i = 0; i < size - 2; i++) {
+            secondLast = secondLast.nextNode;
+        }
+
+        let last = secondLast.nextNode;
+        secondLast.nextNode = null;
+        return last;
+    }
+
     toString() {
         let str = '';
         let current = this.head;

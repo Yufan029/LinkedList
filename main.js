@@ -11,6 +11,8 @@ list.append("turtle");
 list.prepend("xxx");
 
 console.log(`Size is ${list.size()}`);
-console.log(list.tail());
-console.log(list.at(12));
+console.log(`Last node: ${list.tail().toString()}`);
+console.log(list.at(2));
+console.log(list.toString());
+console.log(`Pop node: ${list.pop().toString()}`);
 console.log(list.toString());

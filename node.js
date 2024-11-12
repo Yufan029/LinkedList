@@ -3,4 +3,8 @@ export default class Node {
         this.value = value;
         this.nextNode = nextNode;
     }
+
+    toString() {
+        return `{ value: '${this.value}', nextNode: '${this.nextNode}')`;
+    }
 }
